@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui;
+}
+
+.logo {
+  width: 100px;
+}
+
+img {
+  width: 85%;
+  margin: 0 auto;
+  display: block;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: rgb(74, 74, 248);
+  font-size: 75px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  animation: changeColor 2s infinite;
+}
+
+@keyframes changeColor {
+  0% { color: rgb(1, 11, 26); }
+  25% { color: blue; }
+  50% { color: rgb(0, 195, 255); }
+  75% { color: rgb(23, 6, 124); }
+  100% { color: rgb(0, 217, 255); }
+}
+
+.cors-container {
+  padding: 50px; /* تقليل الحشو حول الأزرار */
+  display: flex; /* تفعيل Flexbox */
+  justify-content: center; /* لتوسيط الأزرار أفقيًا */
+  align-items: center; /* لتوسيط الأزرار عموديًا */
+  gap: 30px; /* تقليل المسافة بين الأزرار */
+  flex-wrap: nowrap; /* لضمان بقاء الأزرار في صف واحد */
+}
+
+button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px; /* عرض الزر */
+  height: 200px; /* ارتفاع الزر */
+  padding: 20px;
+  background-color: rgb(140, 167, 255);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+button:hover {
+  background-color: rgb(212, 222, 252);
+}
+
+button img {
+  width: 50px;
+  margin-bottom: 10px; /* مسافة بين الصورة والنص */
+}
+
+button h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  width: 180px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.button img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.button h3 {
+  margin: 0;
+  font-size: 16px;
+}
